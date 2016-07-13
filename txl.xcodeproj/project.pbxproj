@@ -14,6 +14,13 @@
 		D9DB49F21D33A687004A04CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DB49F01D33A687004A04CB /* LaunchScreen.storyboard */; };
 		D9DB49FD1D33A687004A04CB /* txlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB49FC1D33A687004A04CB /* txlTests.swift */; };
 		D9DB4A081D33A687004A04CB /* txlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A071D33A687004A04CB /* txlUITests.swift */; };
+		D9DB4A161D33A6E0004A04CB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DB4A151D33A6E0004A04CB /* libsqlite3.0.tbd */; };
+		D9DB4A1C1D33A735004A04CB /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A191D33A735004A04CB /* SQLiteDB.swift */; };
+		D9DB4A1D1D33A735004A04CB /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A1A1D33A735004A04CB /* SQLTable.swift */; };
+		D9DB4A1E1D33A735004A04CB /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A1B1D33A735004A04CB /* String-Extras.swift */; };
+		D9DB4A201D33A88E004A04CB /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = D9DB4A1F1D33A88E004A04CB /* data.db */; };
+		D9DB4A221D33A900004A04CB /* ck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A211D33A900004A04CB /* ck.swift */; };
+		D9DB4A241D33AED2004A04CB /* shanchu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB4A231D33AED2004A04CB /* shanchu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,14 @@
 		D9DB4A031D33A687004A04CB /* txlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = txlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DB4A071D33A687004A04CB /* txlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = txlUITests.swift; sourceTree = "<group>"; };
 		D9DB4A091D33A687004A04CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DB4A151D33A6E0004A04CB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D9DB4A171D33A700004A04CB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D9DB4A191D33A735004A04CB /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		D9DB4A1A1D33A735004A04CB /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		D9DB4A1B1D33A735004A04CB /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		D9DB4A1F1D33A88E004A04CB /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		D9DB4A211D33A900004A04CB /* ck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ck.swift; sourceTree = "<group>"; };
+		D9DB4A231D33AED2004A04CB /* shanchu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shanchu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DB4A161D33A6E0004A04CB /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +93,9 @@
 		D9DB49DB1D33A687004A04CB = {
 			isa = PBXGroup;
 			children = (
+				D9DB4A151D33A6E0004A04CB /* libsqlite3.0.tbd */,
+				D9DB4A1F1D33A88E004A04CB /* data.db */,
+				D9DB4A181D33A735004A04CB /* SQLiteDB */,
 				D9DB49E61D33A687004A04CB /* txl */,
 				D9DB49FB1D33A687004A04CB /* txlTests */,
 				D9DB4A061D33A687004A04CB /* txlUITests */,
@@ -103,6 +122,9 @@
 				D9DB49EE1D33A687004A04CB /* Assets.xcassets */,
 				D9DB49F01D33A687004A04CB /* LaunchScreen.storyboard */,
 				D9DB49F31D33A687004A04CB /* Info.plist */,
+				D9DB4A171D33A700004A04CB /* Bridging-Header.h */,
+				D9DB4A211D33A900004A04CB /* ck.swift */,
+				D9DB4A231D33AED2004A04CB /* shanchu.swift */,
 			);
 			path = txl;
 			sourceTree = "<group>";
@@ -123,6 +145,16 @@
 				D9DB4A091D33A687004A04CB /* Info.plist */,
 			);
 			path = txlUITests;
+			sourceTree = "<group>";
+		};
+		D9DB4A181D33A735004A04CB /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				D9DB4A191D33A735004A04CB /* SQLiteDB.swift */,
+				D9DB4A1A1D33A735004A04CB /* SQLTable.swift */,
+				D9DB4A1B1D33A735004A04CB /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DB49F21D33A687004A04CB /* LaunchScreen.storyboard in Resources */,
+				D9DB4A201D33A88E004A04CB /* data.db in Resources */,
 				D9DB49EF1D33A687004A04CB /* Assets.xcassets in Resources */,
 				D9DB49ED1D33A687004A04CB /* Main.storyboard in Resources */,
 			);
@@ -256,7 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DB4A1E1D33A735004A04CB /* String-Extras.swift in Sources */,
+				D9DB4A221D33A900004A04CB /* ck.swift in Sources */,
+				D9DB4A1C1D33A735004A04CB /* SQLiteDB.swift in Sources */,
+				D9DB4A1D1D33A735004A04CB /* SQLTable.swift in Sources */,
 				D9DB49EA1D33A687004A04CB /* ViewController.swift in Sources */,
+				D9DB4A241D33AED2004A04CB /* shanchu.swift in Sources */,
 				D9DB49E81D33A687004A04CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imnu.edu.cn.txl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105045l/Desktop/111/txl/txl/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -416,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imnu.edu.cn.txl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105045l/Desktop/111/txl/txl/Bridging-Header.h";
 			};
 			name = Release;
 		};
